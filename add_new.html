@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Customer</title>
+</head>
+<body>
+    <h1>Add New Customer</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Customer Name" required>
+        <input type="number" name="credits" placeholder="Credits" required>
+        <input type="date" name="dob" placeholder="Date of Birth" required>
+        <button type="submit">Add Customer</button>
+    </form>
+    <a href="{{ url_for('view_users') }}">View All Users</a>
+</body>
+</html>

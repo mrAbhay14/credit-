@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Existing Customer</title>
+</head>
+<body>
+    <h1>Add Existing Customer</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Customer Name" required>
+        <input type="number" name="credits" placeholder="Credits" required>
+        <button type="submit">Add Credits</button>
+    </form>
+    <a href="{{ url_for('view_users') }}">View All Users</a>
+</body>
+</html>
